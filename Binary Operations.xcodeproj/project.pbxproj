@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		773DD5CA235A81AF00138D40 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 773DD5C9235A81AF00138D40 /* main.cpp */; };
+		773DD5DE235A822100138D40 /* binlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 773DD5DC235A822100138D40 /* binlib.cpp */; };
+		773DD5E6235A836B00138D40 /* Binary_Operations_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 773DD5E5235A836B00138D40 /* Binary_Operations_Tests.m */; };
+		773DD5EB235A854D00138D40 /* Binary Operations in Resources */ = {isa = PBXBuildFile; fileRef = 773DD5C6235A81AF00138D40 /* Binary Operations */; };
+		7747DA9A235AA0050098BFFA /* binlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 773DD5DC235A822100138D40 /* binlib.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,22 @@
 /* Begin PBXFileReference section */
 		773DD5C6235A81AF00138D40 /* Binary Operations */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Binary Operations"; sourceTree = BUILT_PRODUCTS_DIR; };
 		773DD5C9235A81AF00138D40 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		773DD5DC235A822100138D40 /* binlib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = binlib.cpp; sourceTree = "<group>"; };
+		773DD5DD235A822100138D40 /* binlib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = binlib.hpp; sourceTree = "<group>"; };
+		773DD5E3235A836B00138D40 /* Binary Operations Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary Operations Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		773DD5E5235A836B00138D40 /* Binary_Operations_Tests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Binary_Operations_Tests.m; sourceTree = "<group>"; };
+		773DD5E7235A836B00138D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		773DD5C3235A81AF00138D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773DD5E0235A836B00138D40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				773DD5C8235A81AF00138D40 /* Binary Operations */,
+				773DD5E4235A836B00138D40 /* Binary Operations Tests */,
 				773DD5C7235A81AF00138D40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				773DD5C6235A81AF00138D40 /* Binary Operations */,
+				773DD5E3235A836B00138D40 /* Binary Operations Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +75,36 @@
 		773DD5C8235A81AF00138D40 /* Binary Operations */ = {
 			isa = PBXGroup;
 			children = (
+				7747DA99235A9E1E0098BFFA /* include */,
+				7747DA98235A9E1B0098BFFA /* src */,
 				773DD5C9235A81AF00138D40 /* main.cpp */,
 			);
 			path = "Binary Operations";
+			sourceTree = "<group>";
+		};
+		773DD5E4235A836B00138D40 /* Binary Operations Tests */ = {
+			isa = PBXGroup;
+			children = (
+				773DD5E5235A836B00138D40 /* Binary_Operations_Tests.m */,
+				773DD5E7235A836B00138D40 /* Info.plist */,
+			);
+			path = "Binary Operations Tests";
+			sourceTree = "<group>";
+		};
+		7747DA98235A9E1B0098BFFA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				773DD5DC235A822100138D40 /* binlib.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		7747DA99235A9E1E0098BFFA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				773DD5DD235A822100138D40 /* binlib.hpp */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,16 +127,40 @@
 			productReference = 773DD5C6235A81AF00138D40 /* Binary Operations */;
 			productType = "com.apple.product-type.tool";
 		};
+		773DD5E2235A836B00138D40 /* Binary Operations Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773DD5E8235A836B00138D40 /* Build configuration list for PBXNativeTarget "Binary Operations Tests" */;
+			buildPhases = (
+				773DD5DF235A836B00138D40 /* Sources */,
+				773DD5E0235A836B00138D40 /* Frameworks */,
+				773DD5E1235A836B00138D40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Binary Operations Tests";
+			productName = "Binary Operations Tests";
+			productReference = 773DD5E3235A836B00138D40 /* Binary Operations Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		773DD5BE235A81AF00138D40 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Eduard Dzhumagaliev";
 				TargetAttributes = {
 					773DD5C5235A81AF00138D40 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					773DD5E2235A836B00138D40 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -109,9 +178,21 @@
 			projectRoot = "";
 			targets = (
 				773DD5C5235A81AF00138D40 /* Binary Operations */,
+				773DD5E2235A836B00138D40 /* Binary Operations Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		773DD5E1235A836B00138D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773DD5EB235A854D00138D40 /* Binary Operations in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		773DD5C2235A81AF00138D40 /* Sources */ = {
@@ -119,6 +200,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				773DD5CA235A81AF00138D40 /* main.cpp in Sources */,
+				773DD5DE235A822100138D40 /* binlib.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		773DD5DF235A836B00138D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773DD5E6235A836B00138D40 /* Binary_Operations_Tests.m in Sources */,
+				7747DA9A235AA0050098BFFA /* binlib.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +267,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/Binary,
+					Operations/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -229,7 +324,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/Binary,
+					Operations/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -241,6 +340,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,6 +351,46 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		773DD5E9235A836B00138D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Binary Operations Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Binary-Operations-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		773DD5EA235A836B00138D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HA8PQ78LFS;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Binary Operations Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "terriblegoodday.Binary-Operations-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -271,6 +412,15 @@
 			buildConfigurations = (
 				773DD5CE235A81AF00138D40 /* Debug */,
 				773DD5CF235A81AF00138D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773DD5E8235A836B00138D40 /* Build configuration list for PBXNativeTarget "Binary Operations Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773DD5E9235A836B00138D40 /* Debug */,
+				773DD5EA235A836B00138D40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

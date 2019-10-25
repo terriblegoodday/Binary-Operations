@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Binary Operations Tests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Binary Operations.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>773DD5C5235A81AF00138D40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>773DD5D3235A81BE00138D40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>773DD5E2235A836B00138D40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
