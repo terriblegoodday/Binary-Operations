@@ -7,9 +7,14 @@
 //
 
 #include <iostream>
+#include "binlib.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << n22n(3) << endl;
+    cout << intToBinary(2) << endl;
+    cout << intToBinary(3) << endl;
     return 0;
 }
